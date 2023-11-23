@@ -1,0 +1,33 @@
+:root {
+    --main-orange-color: #e15f41;
+    --secondary-orange-color:#ffeae6;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background-color: var(--main-orange-color);
+}
+.nav .nav-link, .navbar-brand, .navbar-brand:hover {
+    color: #fff;
+}
+.nav .nav-link.active {
+    background-color: #fff;
+    color: var(--main-orange-color);
+}
+.navbar-toggler {
+    background-color: var(--secondary-orange-color);
+}
+.section-title {
+    font-family: 'Pacifico', cursive;
+}
+.section-title > span {
+    color: var(--main-orange-color);
+}
+#sobre-o-restaurante {
+    background-color: var(--secondary-orange-color);
+}
+#carousel, .carousel-item img {
+    max-height: 95vh;
+    width: 100vw;
+}
