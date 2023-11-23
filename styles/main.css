@@ -8,10 +8,12 @@ body {
 .navbar {
     background-color: var(--main-orange-color);
 }
-.nav .nav-link, .navbar-brand, .navbar-brand:hover {
+#cabecalho .nav .nav-link, .navbar-brand, 
+.navbar-brand:hover, 
+.nav-cardapio .nav-link.active:hover {
     color: #fff;
 }
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background-color: #fff;
     color: var(--main-orange-color);
 }
@@ -21,13 +23,33 @@ body {
 .section-title {
     font-family: 'Pacifico', cursive;
 }
-.section-title > span {
-    color: var(--main-orange-color);
-}
-#sobre-o-restaurante {
+#sobre-o-restaurante, #cardapio {
     background-color: var(--secondary-orange-color);
 }
 #carousel, .carousel-item img {
-    max-height: 95vh;
-    width: 100vw;
+    max-height: 100%;
+    width: 100%;
+}
+.text-colored {
+    color: var(--main-orange-color);
+}
+.nav-cardapio .nav-link.active, 
+#fale-conosco button {
+    background-color: var(--main-orange-color);
+    color: #fff;
+}
+.nav-cardapio .nav-link:hover {
+    color: var(--main-orange-color);
+}
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+.social-links li a {
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
 }
